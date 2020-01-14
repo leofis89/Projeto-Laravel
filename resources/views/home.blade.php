@@ -1,40 +1,35 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-               
-           
-                <painel-component titulo="Dashboard">
 
-                    TESTE DE CONTEÚDO
+     <pagina-component tamanho="9" >      
+        
+        <painel-component titulo="Painel"> 
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            <painel-component titulo="Titulo 1" cor=" panel-danger">
-                                Teste conteúdo 1...
-                            </painel-component>
-                        </div>
+            PAÍNEL DE ENTRADA
 
-                        <div class="col-md-4">
-                            <painel-component titulo="Titulo 2"cor=" panel-warning">
-                                Teste conteúdo 2...
-                            </painel-component>
-                        </div>
+            <div class="row">
+                
+                <div class="col-md-4">    
+                    <caixa-component qtd="80" titulo="Arigos" url="{{route('artigos.index')}}" cor="#f39c12" icone="fa fa-shopping-cart">
+                    </caixa-component  >
+                </div>
 
-                        <div class="col-md-4">
-                            <painel-component titulo="Titulo 3" cor=" panel-info"> 
-                                Teste conteúdo 3...
-                            </painel-component>
-                        </div>                    
-                    </div>
+                <div class="col-md-4">
+                    <caixa-component qtd="72" titulo="Usuarios" url="#" cor="blue" icone="ion ion-person-add">
+                    </caixa-component>
+                </div>
 
-                </painel-component>
-
-               
+                <div class="col-md-4">
+                    <caixa-component qtd="21" titulo="Autores" url="#" cor="green" icone="ion ion-stats-bars">
+                    </caixa-component>
+                </div>                    
             
             </div>
-        </div>
-    </div>
+
+        </painel-component>
+
+    </pagina-component>         
+    
 @endsection
+

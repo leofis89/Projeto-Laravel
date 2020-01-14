@@ -27,17 +27,29 @@
 
 <style >
 
-    .panel-danger {
-        border-color:blueviolet;
-    }
-    .panel-warning {
-    border-color:deeppink;
-}
-    .panel-info {
+.panel-info {
     border-color: darkcyan;
 }
 
-    .panel-success {
+.panel-success {
     border-color:green;
 }
+.panel-danger > .panel-heading {
+    color: white;
+    background-color: #c74646;
+    border-color: #c76969;
+}
+
+.panel-warning > .panel-heading {
+    color: #cccccc;
+    background-color: #9e860b;
+    border-color: #9e6f11;
+}
+
+.panel-info > .panel-heading {
+    color: #dddddd;
+    background-color: #047ebb;
+    border-color: #0088a3;
+}
+
 </style>
