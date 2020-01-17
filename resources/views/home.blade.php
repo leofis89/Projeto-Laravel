@@ -6,7 +6,7 @@
         
         <painel-component titulo="Painel"> 
 
-            PAÍNEL DE ENTRADA
+        <migalhas-component :lista="{{$listaMigalhas}}"  ></migalhas-component>
 
             <div class="row">
                 
@@ -16,12 +16,12 @@
                 </div>
 
                 <div class="col-md-4">
-                    <caixa-component qtd="72" titulo="Usuarios" url="#" cor="blue" icone="ion ion-person-add">
+                    <caixa-component qtd="72" titulo="Usuarios" url="{{route('usuarios.index')}}" cor="blue" icone="ion ion-person-add">
                     </caixa-component>
                 </div>
 
                 <div class="col-md-4">
-                    <caixa-component qtd="21" titulo="Autores" url="#" cor="green" icone="ion ion-stats-bars">
+                    <caixa-component qtd="21" titulo="Autores" url="{{route('autores.index')}}" cor="green" icone="ion ion-stats-bars">
                     </caixa-component>
                 </div>                    
             

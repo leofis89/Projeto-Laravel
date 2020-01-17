@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Blog') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div id="app">
 
     <!-- COMPONENTE TOPO -->
-    <topo-component titulo="{{ config('app.name', 'Laravel') }}" url="{{url('/')}}">
+    <topo-component titulo="{{ config('app.name', 'Blog') }}" url="{{url('/')}}">
         
         <!-- TUDO QUE ESTIVER DENTRO DO COMPONENTE  É CONTROLADO USANDO SLOTS -->
         <!-- Authentication Links -->
